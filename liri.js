@@ -95,21 +95,27 @@ var getMeMovie = function(movieName) {
 request('http://www.omdbapi.com/?t=' + movieName + '&y=&plot=short&r=json&apikey=trilogy', 
 function (error, response, body) {
   if (!error && response.statusCode == 200) { 
- // console.log(body); // Print the HTML for the Google homepage.
+ // console.log(body); 
  var jsonData = JSON.parse(body);
 
- console.log('Title: ' + jsonData.Title);
- console.log('Year: ' + jsonData.Year);
- console.log('IMDB Rating: ' + jsonData.imdbRating);
- console.log('Country ' + jsonData.Country);
- console.log('Language: ' + jsonData.Language);
- console.log('Plot: ' + jsonData.Plot);
- console.log('Actors: ' + jsonData.Actors);
- console.log('Rotten tomatoes rating: ' + jsonData.tomatoRating);
- console.log('Roten tomatoes URL: ' + jsonData.tomatoURL);
-  }
-});
+ var data = {
+ 
+ 'Title: ' : jsonData.Title,
+ 'Year: ' : jsonData.Year,
+ 'IMDB Rating: ' : jsonData.imdbRating,
+ 'Country ' : jsonData.Country,
+ 'Language: ' : jsonData.Language,
+ 'Plot: ' : jsonData.Plot,
+ 'Actors: ' : jsonData.Actors,
+ 'Rotten tomatoes rating: ' : jsonData.tomatoRating,
+ 'Roten tomatoes URL: ' : jsonData.tomatoUR
+ };
+
+ console.log(data);
+ writeToLog(data);
 }
+});
+};
 
 var doWhatItSays = function() {
 fs.readFile('random.txt', 'utf8', function (err, data) {
