@@ -1,0 +1,51 @@
+=============== LOG ENTRY BEGIN ===============
+Tue May 15 2018 11:50:24 GMT-0500 (Central Daylight Time)
+ 
+TERMINAL COMMANDS:
+$: twitter
+ 
+DATA OUTPUT:
+1. Tweet: What can happen if our sun dies?
+Created at: Mon May 14 18:10:25 +0000 2018 
+=============== LOG ENTRY END ===============
+ 
+2. Tweet: Aliens May Well Exist in a Parallel Universe.😃
+Created at: Mon May 14 18:08:12 +0000 2018 
+=============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Tue May 15 2018 12:04:11 GMT-0500 (Central Daylight Time)
+ 
+TERMINAL COMMANDS:
+$: twitter
+ 
+DATA OUTPUT:
+1. Tweet: What can happen if our sun dies?
+Created at: Mon May 14 18:10:25 +0000 2018 
+=============== LOG ENTRY END ===============
+ 
+2. Tweet: Aliens May Well Exist in a Parallel Universe.😃
+Created at: Mon May 14 18:08:12 +0000 2018 
+=============== LOG ENTRY END ===============
+ 
+=============== LOG ENTRY BEGIN ===============
+Tue May 15 2018 12:05:13 GMT-0500 (Central Daylight Time)
+ 
+TERMINAL COMMANDS:
+$: spotify
+ 
+DATA OUTPUT:
+=============== LOG ENTRY BEGIN ===============
+Tue May 15 2018 12:10:28 GMT-0500 (Central Daylight Time)
+ 
+TERMINAL COMMANDS:
+$: spotify
+ 
+DATA OUTPUT:
+=============== LOG ENTRY BEGIN ===============
+Tue May 15 2018 12:13:11 GMT-0500 (Central Daylight Time)
+ 
+TERMINAL COMMANDS:
+$: spotify
+ 
+DATA OUTPUT:
