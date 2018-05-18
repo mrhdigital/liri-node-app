@@ -1,11 +1,16 @@
+// required packages
+//---------------------------------------
+
 require("dotenv").config();
-
+// import the keys files
 var keys = require('./keys.js');
-
+// import the twitter nmp package.
 var Twitter = require('twitter');
-
+// import the node-spotify-api npm package
 var Spotify = require('node-spotify-api');
+// import the request npm package
 var request = require('request');
+// import the fs package for read and write
 var fs = require("fs");
 
 // getMyTweet function
@@ -51,7 +56,9 @@ var getArtistNames = function(artist) {
 }
 // getMwSpotify function
 var getMeSpotify = function(songName) {
-  
+  if(songName === undefined) {
+      songName = "The Sign";
+  }
     var spotify = new Spotify(keys.spotify); 
 
  
