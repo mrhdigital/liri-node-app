@@ -72,15 +72,19 @@ spotify.search({ type: 'track', query: songName }, function(err, data) {
     //console.log(data);
     //console.log(data.tracks.items[0]);
     var songs = data.tracks.items;
+    var data = [];
     for(var i = 0; i<songs.length; i++) {
-        console.log(i);
-        console.log('artists(s): ' + songs[i].artists.map(getArtistNames));
-        console.log('song name: ' + songs[i].name);
-        console.log('preview songs: ' + songs[i].preview_url);
-        console.log('album: ' + songs[i].album.name);
-        console.log('-------------------------------------------------------');
-
+        data.push({
+        'No: ':i+1,
+        'artists(s): ' : songs[i].artists.map(getArtistNames),
+        'song name: ' : songs[i].name,
+        'preview songs: ' : songs[i].preview_url,
+        'album: ' : songs[i].album.name,
+        '-------------------------------------------------------':i+1
+    });       
     }
+    console.log(data);
+    writeToLog(data);
     });
 }
 
