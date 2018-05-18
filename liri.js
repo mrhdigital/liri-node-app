@@ -85,6 +85,9 @@ spotify.search({ type: 'track', query: songName }, function(err, data) {
 }
 
 var getMeMovie = function(movieName) {
+    if(movieName === undefined) {
+        movieName = "Mr. Nobody";
+    }
 request('http://www.omdbapi.com/?t=' + movieName + '&y=&plot=short&r=json&apikey=trilogy', 
 function (error, response, body) {
   if (!error && response.statusCode == 200) { 
