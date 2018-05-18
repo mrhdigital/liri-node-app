@@ -157,4 +157,17 @@ fs.readFile('random.txt', 'utf8', function (err, data) {
                 console.log(error)
             }
         })
-    }
+    };
+
+    var writeToLog = function(data) {
+        fs.appendFile("log.txt", "\r\n\r\n");
+      
+        fs.appendFile("log.txt", JSON.stringify(data), function(err) {
+          if (err) {
+            return console.log(err);
+          }
+      
+          console.log("log.txt was updated!");
+        });
+      };
+      
